@@ -7,12 +7,14 @@
 
 import SwiftUI
 
-struct ThreadsTextFieldModifier: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
+struct ThreadsTextFieldModifier: ViewModifier {
 
-#Preview {
-    ThreadsTextFieldModifier()
+    func body(content: Content) -> some View {
+        content
+            .font(.subheadline)
+            .padding(12)
+            .background(Color(.systemGray6))
+            .cornerRadius(10)
+            .padding(.horizontal, 24)
+    }
 }
