@@ -22,6 +22,8 @@
 		A55B15482B71712B00FF4851 /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55B15472B71712B00FF4851 /* LogInView.swift */; };
 		A5E3436F2B74BC2D00D20D33 /* FeedViewThreadCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E3436E2B74BC2D00D20D33 /* FeedViewThreadCell.swift */; };
 		A5E343722B74C30D00D20D33 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5E343712B74C30D00D20D33 /* Launch Screen.storyboard */; };
+		A5F73F602B7910F2000D2FC9 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F73F5F2B7910F2000D2FC9 /* UserCell.swift */; };
+		A5F73F622B791113000D2FC9 /* CircularProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F73F612B791113000D2FC9 /* CircularProfileImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +43,8 @@
 		A55B15472B71712B00FF4851 /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
 		A5E3436E2B74BC2D00D20D33 /* FeedViewThreadCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewThreadCell.swift; sourceTree = "<group>"; };
 		A5E343712B74C30D00D20D33 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		A5F73F5F2B7910F2000D2FC9 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		A5F73F612B791113000D2FC9 /* CircularProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProfileImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +174,7 @@
 		A55B152D2B716D5400FF4851 /* Threads */ = {
 			isa = PBXGroup;
 			children = (
+				A5F73F5E2B7910E1000D2FC9 /* Components */,
 				A55B15422B7170B600FF4851 /* App */,
 				A55B15412B7170B500FF4851 /* Core */,
 				A55B15402B7170B400FF4851 /* Extensions */,
@@ -276,6 +281,15 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		A5F73F5E2B7910E1000D2FC9 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				A5F73F5F2B7910F2000D2FC9 /* UserCell.swift */,
+				A5F73F612B791113000D2FC9 /* CircularProfileImageView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -348,11 +362,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				A53216652B73BD8A00942F6F /* CreateThreadView.swift in Sources */,
+				A5F73F602B7910F2000D2FC9 /* UserCell.swift in Sources */,
 				A532164E2B73ADB400942F6F /* ThreadsTextFieldModifier.swift in Sources */,
 				A53216612B73BD6200942F6F /* FeedView.swift in Sources */,
 				A55B15482B71712B00FF4851 /* LogInView.swift in Sources */,
 				A55B15312B716D5400FF4851 /* ContentView.swift in Sources */,
 				A55B152F2B716D5400FF4851 /* ThreadsApp.swift in Sources */,
+				A5F73F622B791113000D2FC9 /* CircularProfileImageView.swift in Sources */,
 				A5E3436F2B74BC2D00D20D33 /* FeedViewThreadCell.swift in Sources */,
 				A53216592B73BD1500942F6F /* ActivityView.swift in Sources */,
 				A53216552B73BB3100942F6F /* ThreadsTabBarView.swift in Sources */,
