@@ -20,6 +20,7 @@
 		A55B15332B716D5500FF4851 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A55B15322B716D5500FF4851 /* Assets.xcassets */; };
 		A55B15362B716D5500FF4851 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A55B15352B716D5500FF4851 /* Preview Assets.xcassets */; };
 		A55B15482B71712B00FF4851 /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55B15472B71712B00FF4851 /* LogInView.swift */; };
+		A58AF2122B7A98A20031484D /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58AF2112B7A98A20031484D /* EditProfileView.swift */; };
 		A5C7985B2B7A02A1004146C4 /* ProfileThreadFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C7985A2B7A02A1004146C4 /* ProfileThreadFilter.swift */; };
 		A5E3436F2B74BC2D00D20D33 /* FeedViewThreadCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E3436E2B74BC2D00D20D33 /* FeedViewThreadCell.swift */; };
 		A5E343722B74C30D00D20D33 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5E343712B74C30D00D20D33 /* Launch Screen.storyboard */; };
@@ -42,6 +43,7 @@
 		A55B15322B716D5500FF4851 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A55B15352B716D5500FF4851 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A55B15472B71712B00FF4851 /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
+		A58AF2112B7A98A20031484D /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
 		A5C7985A2B7A02A1004146C4 /* ProfileThreadFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileThreadFilter.swift; sourceTree = "<group>"; };
 		A5E3436E2B74BC2D00D20D33 /* FeedViewThreadCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewThreadCell.swift; sourceTree = "<group>"; };
 		A5E343712B74C30D00D20D33 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 		A53216662B73BD9F00942F6F /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				A58AF20F2B7A98880031484D /* EditProfile */,
 				A5C798592B7A028D004146C4 /* Model */,
 				A53216672B73BDA400942F6F /* View */,
 			);
@@ -275,6 +278,22 @@
 			path = Root;
 			sourceTree = "<group>";
 		};
+		A58AF20F2B7A98880031484D /* EditProfile */ = {
+			isa = PBXGroup;
+			children = (
+				A58AF2102B7A98930031484D /* View */,
+			);
+			path = EditProfile;
+			sourceTree = "<group>";
+		};
+		A58AF2102B7A98930031484D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A58AF2112B7A98A20031484D /* EditProfileView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		A5C798592B7A028D004146C4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -374,6 +393,7 @@
 			files = (
 				A53216652B73BD8A00942F6F /* CreateThreadView.swift in Sources */,
 				A5F73F602B7910F2000D2FC9 /* UserCell.swift in Sources */,
+				A58AF2122B7A98A20031484D /* EditProfileView.swift in Sources */,
 				A532164E2B73ADB400942F6F /* ThreadsTextFieldModifier.swift in Sources */,
 				A53216612B73BD6200942F6F /* FeedView.swift in Sources */,
 				A55B15482B71712B00FF4851 /* LogInView.swift in Sources */,

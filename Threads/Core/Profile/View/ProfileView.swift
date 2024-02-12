@@ -46,7 +46,6 @@ struct ProfileView: View {
                 }
                 
                 Button {
-                    
                 } label: {
                     Text("Follow")
                         .font(.subheadline)
