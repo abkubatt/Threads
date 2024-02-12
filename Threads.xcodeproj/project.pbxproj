@@ -20,6 +20,7 @@
 		A55B15332B716D5500FF4851 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A55B15322B716D5500FF4851 /* Assets.xcassets */; };
 		A55B15362B716D5500FF4851 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A55B15352B716D5500FF4851 /* Preview Assets.xcassets */; };
 		A55B15482B71712B00FF4851 /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55B15472B71712B00FF4851 /* LogInView.swift */; };
+		A5C7985B2B7A02A1004146C4 /* ProfileThreadFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C7985A2B7A02A1004146C4 /* ProfileThreadFilter.swift */; };
 		A5E3436F2B74BC2D00D20D33 /* FeedViewThreadCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E3436E2B74BC2D00D20D33 /* FeedViewThreadCell.swift */; };
 		A5E343722B74C30D00D20D33 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5E343712B74C30D00D20D33 /* Launch Screen.storyboard */; };
 		A5F73F602B7910F2000D2FC9 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F73F5F2B7910F2000D2FC9 /* UserCell.swift */; };
@@ -41,6 +42,7 @@
 		A55B15322B716D5500FF4851 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A55B15352B716D5500FF4851 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A55B15472B71712B00FF4851 /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
+		A5C7985A2B7A02A1004146C4 /* ProfileThreadFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileThreadFilter.swift; sourceTree = "<group>"; };
 		A5E3436E2B74BC2D00D20D33 /* FeedViewThreadCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewThreadCell.swift; sourceTree = "<group>"; };
 		A5E343712B74C30D00D20D33 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		A5F73F5F2B7910F2000D2FC9 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 		A53216662B73BD9F00942F6F /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				A5C798592B7A028D004146C4 /* Model */,
 				A53216672B73BDA400942F6F /* View */,
 			);
 			path = Profile;
@@ -272,6 +275,14 @@
 			path = Root;
 			sourceTree = "<group>";
 		};
+		A5C798592B7A028D004146C4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A5C7985A2B7A02A1004146C4 /* ProfileThreadFilter.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		A5E343702B74C2F800D20D33 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -369,6 +380,7 @@
 				A55B15312B716D5400FF4851 /* ContentView.swift in Sources */,
 				A55B152F2B716D5400FF4851 /* ThreadsApp.swift in Sources */,
 				A5F73F622B791113000D2FC9 /* CircularProfileImageView.swift in Sources */,
+				A5C7985B2B7A02A1004146C4 /* ProfileThreadFilter.swift in Sources */,
 				A5E3436F2B74BC2D00D20D33 /* FeedViewThreadCell.swift in Sources */,
 				A53216592B73BD1500942F6F /* ActivityView.swift in Sources */,
 				A53216552B73BB3100942F6F /* ThreadsTabBarView.swift in Sources */,
