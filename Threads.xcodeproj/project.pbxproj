@@ -43,6 +43,8 @@
 		A53B27BF2B7D242F000455B0 /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A53B27BE2B7D242F000455B0 /* FirebaseRemoteConfigSwift */; };
 		A53B27C12B7D242F000455B0 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = A53B27C02B7D242F000455B0 /* FirebaseStorage */; };
 		A53B27C32B7D242F000455B0 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = A53B27C22B7D242F000455B0 /* FirebaseStorageCombine-Community */; };
+		A555F0A52B7E6E2D00B73A2C /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A555F0A42B7E6E2D00B73A2C /* RegistrationViewModel.swift */; };
+		A555F0A72B7E6EC200B73A2C /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A555F0A62B7E6EC200B73A2C /* AuthService.swift */; };
 		A55B152F2B716D5400FF4851 /* ThreadsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55B152E2B716D5400FF4851 /* ThreadsApp.swift */; };
 		A55B15312B716D5400FF4851 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55B15302B716D5400FF4851 /* ContentView.swift */; };
 		A55B15332B716D5500FF4851 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A55B15322B716D5500FF4851 /* Assets.xcassets */; };
@@ -66,6 +68,8 @@
 		A53216642B73BD8A00942F6F /* CreateThreadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateThreadView.swift; sourceTree = "<group>"; };
 		A53216682B73BDB000942F6F /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		A53B278B2B7D2375000455B0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A555F0A42B7E6E2D00B73A2C /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
+		A555F0A62B7E6EC200B73A2C /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		A55B152B2B716D5400FF4851 /* Threads.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Threads.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A55B152E2B716D5400FF4851 /* ThreadsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadsApp.swift; sourceTree = "<group>"; };
 		A55B15302B716D5400FF4851 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -217,6 +221,22 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		A555F0A22B7E6E0800B73A2C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A555F0A42B7E6E2D00B73A2C /* RegistrationViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A555F0A32B7E6E1600B73A2C /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				A555F0A62B7E6EC200B73A2C /* AuthService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		A55B15222B716D5400FF4851 = {
 			isa = PBXGroup;
 			children = (
@@ -312,6 +332,8 @@
 		A55B15432B7170CF00FF4851 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
+				A555F0A32B7E6E1600B73A2C /* Service */,
+				A555F0A22B7E6E0800B73A2C /* ViewModel */,
 				A55B15442B7170DB00FF4851 /* Views */,
 			);
 			path = Auth;
@@ -482,7 +504,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A53216652B73BD8A00942F6F /* CreateThreadView.swift in Sources */,
+				A555F0A52B7E6E2D00B73A2C /* RegistrationViewModel.swift in Sources */,
 				A5F73F602B7910F2000D2FC9 /* UserCell.swift in Sources */,
+				A555F0A72B7E6EC200B73A2C /* AuthService.swift in Sources */,
 				A58AF2122B7A98A20031484D /* EditProfileView.swift in Sources */,
 				A532164E2B73ADB400942F6F /* ThreadsTextFieldModifier.swift in Sources */,
 				A53216612B73BD6200942F6F /* FeedView.swift in Sources */,
