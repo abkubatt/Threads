@@ -6,3 +6,21 @@
 //
 
 import Foundation
+import Combine
+
+final class ProfileViewModel: ObservableObject {
+    @Published var currentUser: User?
+    private var cancellables = Set<AnyCancellable>()
+    
+    init() {
+        setSubscribers()
+    }
+    
+    private func setSubscribers() {
+        UserService.shared.$currentUser.sink { [weak self] user in
+            self?.currentUser = user
+            print("user from combine: \(String(describing: user))")
+        }
+        .store(in: &cancellables)
+    }
+}
