@@ -112,6 +112,8 @@ struct ProfileView: View {
             }
             .padding(.horizontal)
         }
+        .navigationBarTitleDisplayMode(.inline)
+        .padding(.horizontal)
     }
 }
 
