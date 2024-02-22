@@ -48,6 +48,9 @@
 		A53B27C12B7D242F000455B0 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = A53B27C02B7D242F000455B0 /* FirebaseStorage */; };
 		A53B27C32B7D242F000455B0 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = A53B27C22B7D242F000455B0 /* FirebaseStorageCombine-Community */; };
 		A54E0D862B87C80B003D8558 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = A54E0D852B87C80B003D8558 /* Kingfisher */; };
+		A54E0D892B87D4BE003D8558 /* CreateThreadViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54E0D882B87D4BE003D8558 /* CreateThreadViewModel.swift */; };
+		A54E0D8B2B87D5ED003D8558 /* Thread.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54E0D8A2B87D5ED003D8558 /* Thread.swift */; };
+		A54E0D8D2B87D710003D8558 /* ThreadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54E0D8C2B87D710003D8558 /* ThreadService.swift */; };
 		A555F0A52B7E6E2D00B73A2C /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A555F0A42B7E6E2D00B73A2C /* RegistrationViewModel.swift */; };
 		A555F0A72B7E6EC200B73A2C /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A555F0A62B7E6EC200B73A2C /* AuthService.swift */; };
 		A55B152F2B716D5400FF4851 /* ThreadsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55B152E2B716D5400FF4851 /* ThreadsApp.swift */; };
@@ -85,6 +88,9 @@
 		A5343EE52B873F8D0098CE29 /* EditProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewModel.swift; sourceTree = "<group>"; };
 		A5343EE72B8740AD0098CE29 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
 		A53B278B2B7D2375000455B0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A54E0D882B87D4BE003D8558 /* CreateThreadViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateThreadViewModel.swift; sourceTree = "<group>"; };
+		A54E0D8A2B87D5ED003D8558 /* Thread.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thread.swift; sourceTree = "<group>"; };
+		A54E0D8C2B87D710003D8558 /* ThreadService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadService.swift; sourceTree = "<group>"; };
 		A555F0A42B7E6E2D00B73A2C /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		A555F0A62B7E6EC200B73A2C /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		A55B152B2B716D5400FF4851 /* Threads.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Threads.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -233,6 +239,7 @@
 		A53216622B73BD7100942F6F /* CreateThread */ = {
 			isa = PBXGroup;
 			children = (
+				A54E0D872B87D4AE003D8558 /* ViewModel */,
 				A53216632B73BD7D00942F6F /* View */,
 			);
 			path = CreateThread;
@@ -270,6 +277,14 @@
 			isa = PBXGroup;
 			children = (
 				A5343EE52B873F8D0098CE29 /* EditProfileViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A54E0D872B87D4AE003D8558 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A54E0D882B87D4BE003D8558 /* CreateThreadViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -344,6 +359,7 @@
 			children = (
 				A57EA7D92B80B2D900B10392 /* UserService.swift */,
 				A5343EE72B8740AD0098CE29 /* ImageUploader.swift */,
+				A54E0D8C2B87D710003D8558 /* ThreadService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -352,6 +368,7 @@
 			isa = PBXGroup;
 			children = (
 				A57EA7DB2B80B4BD00B10392 /* User.swift */,
+				A54E0D8A2B87D5ED003D8558 /* Thread.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -608,6 +625,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A53216652B73BD8A00942F6F /* CreateThreadView.swift in Sources */,
+				A54E0D892B87D4BE003D8558 /* CreateThreadViewModel.swift in Sources */,
 				A555F0A52B7E6E2D00B73A2C /* RegistrationViewModel.swift in Sources */,
 				A5F73F602B7910F2000D2FC9 /* UserCell.swift in Sources */,
 				A555F0A72B7E6EC200B73A2C /* AuthService.swift in Sources */,
@@ -637,6 +655,8 @@
 				A53216692B73BDB000942F6F /* ProfileView.swift in Sources */,
 				A53216522B73AE3C00942F6F /* RegistrationView.swift in Sources */,
 				A57EA7DC2B80B4BD00B10392 /* User.swift in Sources */,
+				A54E0D8B2B87D5ED003D8558 /* Thread.swift in Sources */,
+				A54E0D8D2B87D710003D8558 /* ThreadService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
