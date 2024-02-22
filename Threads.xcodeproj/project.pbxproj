@@ -17,6 +17,8 @@
 		A53216612B73BD6200942F6F /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53216602B73BD6200942F6F /* FeedView.swift */; };
 		A53216652B73BD8A00942F6F /* CreateThreadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53216642B73BD8A00942F6F /* CreateThreadView.swift */; };
 		A53216692B73BDB000942F6F /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53216682B73BDB000942F6F /* ProfileView.swift */; };
+		A5343EE62B873F8D0098CE29 /* EditProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5343EE52B873F8D0098CE29 /* EditProfileViewModel.swift */; };
+		A5343EE82B8740AD0098CE29 /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5343EE72B8740AD0098CE29 /* ImageUploader.swift */; };
 		A53B278C2B7D2375000455B0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A53B278B2B7D2375000455B0 /* GoogleService-Info.plist */; };
 		A53B278F2B7D242F000455B0 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = A53B278E2B7D242F000455B0 /* FirebaseAnalytics */; };
 		A53B27912B7D242F000455B0 /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = A53B27902B7D242F000455B0 /* FirebaseAnalyticsOnDeviceConversion */; };
@@ -79,6 +81,8 @@
 		A53216602B73BD6200942F6F /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		A53216642B73BD8A00942F6F /* CreateThreadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateThreadView.swift; sourceTree = "<group>"; };
 		A53216682B73BDB000942F6F /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		A5343EE52B873F8D0098CE29 /* EditProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewModel.swift; sourceTree = "<group>"; };
+		A5343EE72B8740AD0098CE29 /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
 		A53B278B2B7D2375000455B0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A555F0A42B7E6E2D00B73A2C /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		A555F0A62B7E6EC200B73A2C /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
@@ -260,6 +264,14 @@
 			path = UserProfile;
 			sourceTree = "<group>";
 		};
+		A5343EE42B873F790098CE29 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A5343EE52B873F8D0098CE29 /* EditProfileViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		A555F0A22B7E6E0800B73A2C /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -329,6 +341,7 @@
 			isa = PBXGroup;
 			children = (
 				A57EA7D92B80B2D900B10392 /* UserService.swift */,
+				A5343EE72B8740AD0098CE29 /* ImageUploader.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -445,6 +458,7 @@
 		A58AF20F2B7A98880031484D /* EditProfile */ = {
 			isa = PBXGroup;
 			children = (
+				A5343EE42B873F790098CE29 /* ViewModel */,
 				A58AF2102B7A98930031484D /* View */,
 			);
 			path = EditProfile;
@@ -594,6 +608,7 @@
 				A5F73F602B7910F2000D2FC9 /* UserCell.swift in Sources */,
 				A555F0A72B7E6EC200B73A2C /* AuthService.swift in Sources */,
 				A51326582B7F99C2007BFF28 /* ContentViewModel.swift in Sources */,
+				A5343EE62B873F8D0098CE29 /* EditProfileViewModel.swift in Sources */,
 				A58AF2122B7A98A20031484D /* EditProfileView.swift in Sources */,
 				A56F3EBF2B8220D100EC240B /* CurrentUserProfileView.swift in Sources */,
 				A56F3EC82B82263000EC240B /* PreviewProvider.swift in Sources */,
@@ -605,6 +620,7 @@
 				A56F3EC42B82236300EC240B /* UserContentListView.swift in Sources */,
 				A55B15312B716D5400FF4851 /* ContentView.swift in Sources */,
 				A55B152F2B716D5400FF4851 /* ThreadsApp.swift in Sources */,
+				A5343EE82B8740AD0098CE29 /* ImageUploader.swift in Sources */,
 				A5F73F622B791113000D2FC9 /* CircularProfileImageView.swift in Sources */,
 				A51326542B7F98B1007BFF28 /* LogInViewModel.swift in Sources */,
 				A5C7985B2B7A02A1004146C4 /* ProfileThreadFilter.swift in Sources */,
