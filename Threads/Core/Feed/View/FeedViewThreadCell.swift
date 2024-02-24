@@ -8,15 +8,16 @@
 import SwiftUI
 
 struct FeedViewThreadCell: View {
+    var thread: Thread
 
     var body: some View {
         VStack {
             HStack(alignment: .top, spacing: 12) {
-                CircularProfileImageView(user: nil, size: .medium)
+                CircularProfileImageView(user: thread.user, size: .medium)
                 
                 VStack(alignment: .leading, spacing: 4) {
                     HStack {
-                        Text("abkubatt")
+                        Text(thread.user?.username ?? "")
                             .font(.footnote)
                             .fontWeight(.semibold)
                         
@@ -33,7 +34,7 @@ struct FeedViewThreadCell: View {
                         }
                     }
                     
-                    Text("Everything is possible")
+                    Text(thread.caption)
                         .font(.footnote)
                         .multilineTextAlignment(.leading)
                     
@@ -69,5 +70,5 @@ struct FeedViewThreadCell: View {
 }
 
 #Preview {
-    FeedViewThreadCell()
+    FeedViewThreadCell(thread: DeveloperPreview.thread)
 }
