@@ -13,6 +13,7 @@ final class UserContentListViewModel: ObservableObject {
     let user: User
     
     init(user: User) {
+        self.user = user
         Task { try await fetchUserThreads() }
     }
     

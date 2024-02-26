@@ -23,7 +23,7 @@ struct FeedViewThreadCell: View {
                         
                         Spacer()
                         
-                        Text(thread.caption.timestampString())
+                        Text(thread.timestamp.timestampString())
                             .font(.caption)
                             .foregroundColor(Color(.systemGray3))
                         
